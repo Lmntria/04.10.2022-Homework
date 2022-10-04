@@ -1,0 +1,205 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.orbit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background-image: url(https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.sun{
+  background-color: rgba( 253, 184, 19,0.9);
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 100%;
+  position: fixed;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg/220px-The_Sun_by_the_Atmospheric_Imaging_Assembly_of_NASA%27s_Solar_Dynamics_Observatory_-_20100819.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 125%;
+}
+.mer{
+  background-color: rgba( 253, 184, 19,0.9);
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 100%;
+  position: absolute;
+  animation: mer 1s linear infinite;
+  transform: translate(100px);
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Mercury_in_color_-_Prockter07-edit1.jpg/220px-Mercury_in_color_-_Prockter07-edit1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 125%;
+}
+.ven{
+  background-color: rgba( 253, 184, 19,0.9);
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 100%;
+  position: absolute;
+  animation: ven 3s linear infinite;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Venus-real_color.jpg/220px-Venus-real_color.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 125%;
+}
+.earth{
+  background-color: rgba( 253, 184, 19,0.9);
+  width: 35px;
+  height: 35px;
+  border: none;
+  position: absolute;
+  border-radius: 100%;
+  animation: earth 5s linear infinite;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/220px-The_Earth_seen_from_Apollo_17.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 125%;
+}
+.mars{
+  background-color: rgba( 253, 184, 19,0.9);
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 100%;
+  position: absolute;
+  animation: mars 7s linear infinite;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/220px-OSIRIS_Mars_true_color.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 125%;
+}
+.jup{
+  background-color: rgba( 253, 184, 19,0.9);
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 100%;
+  position: absolute;
+  animation: jup 9s linear infinite;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/80/Jupiter_detail_voyager2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 125%;
+}
+.saturn{
+  background-color: rgba( 253, 184, 19,0.9);
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 100%;
+  position: absolute;
+  animation: sat 11s linear infinite;
+  background-image: url(https://solarsystem.nasa.gov/system/news_items/main_images/814_pia21046.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 200%;
+}
+.uranus{
+  background-color: rgba( 253, 184, 19,0.9);
+  width: 43px;
+  height: 43px;
+  border: none;
+  border-radius: 100%;
+  position: absolute;
+  animation: ur 13s linear infinite;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Uranus2.jpg/220px-Uranus2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 125%;
+}
+.neptune{
+  background-color: rgba( 253, 184, 19,0.9);
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 100%;
+  position: absolute;
+  animation: nep 15s linear infinite;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg/220px-Neptune_-_Voyager_2_%2829347980845%29_flatten_crop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 125%;
+}
+@keyframes mer {
+  from{
+    transform: rotate(0deg) translateX(70px);
+  }
+  to{
+    transform: rotate(360deg) translateX(70px);
+  }
+  
+}
+@keyframes ven {
+  from{
+    transform: rotate(0deg) translateX(110px);
+  }
+  to{
+    transform: rotate(360deg) translateX(110px);
+  }
+  
+}
+@keyframes earth {
+  from{
+    transform: rotate(0deg) translateX(150px);
+  }
+  to{
+    transform: rotate(360deg) translateX(150px);
+  }
+  
+}
+@keyframes mars {
+  from{
+    transform: rotate(0deg) translateX(190px);
+  }
+  to{
+    transform: rotate(360deg) translateX(190px);
+  }
+  
+}
+@keyframes jup {
+  from{
+    transform: rotate(0deg) translateX(240px);
+  }
+  to{
+    transform: rotate(360deg) translateX(240px);
+  }
+  
+}
+@keyframes sat {
+  from{
+    transform: rotate(0deg) translateX(290px);
+  }
+  to{
+    transform: rotate(360deg) translateX(290px);
+  }
+  
+}
+@keyframes ur {
+  from{
+    transform: rotate(0deg) translateX(340px);
+  }
+  to{
+    transform: rotate(360deg) translateX(340px);
+  }
+  
+}
+@keyframes nep {
+  from{
+    transform: rotate(0deg) translateX(390px);
+  }
+  to{
+    transform: rotate(360deg) translateX(390px);
+  }
+  
+}
